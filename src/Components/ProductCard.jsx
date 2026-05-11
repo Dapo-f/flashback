@@ -1,13 +1,13 @@
 import React from "react";
 import AppleWatch from '../assets/Applewatch.jpg'
-export default function ProductCard({name, price}) {
+export default function ProductCard({name, price, image}) {
   return (
     <>
       <div className="w-full max-w-sm bg-neutral-primary-soft p-6 border border-default rounded-md shadow-xs">
         <a href="#">
           <img
             className="rounded-base mb-6"
-            src={AppleWatch}
+            src={image || AppleWatch}
             alt="product image"
           />
         </a>
